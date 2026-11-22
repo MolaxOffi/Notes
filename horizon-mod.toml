@@ -1,0 +1,13 @@
+id = "notes"
+name = "Notes"
+version = "1.0.0"
+description = "An in-game notepad: WORLD, SERVER and GLOBAL notes, saved locally, with pinned notes on the HUD (N by default)."
+authors = ["Notes"]
+license = "MIT"
+api = "0.2"
+side = "client"
+capabilities = ["registries"]
+
+[wasm]
+sha512 = "f4e784aaea37421aaf97ec8eab47469ce34990038f12a32ccc2acdea61a95557236ce6b56f4512c113293b3c0c38590bd1841e1eb913020316c4e5d743e4bca7"
+toolchain = "1.99.1 58cf8f9c35b355199727627d07ae34a4e2846d67"
