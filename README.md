@@ -7,7 +7,7 @@ Client-side only, written in Rust (WebAssembly). Nothing to install on servers.
 ## Features
 
 - **Notepad screen** opened with **N** (rebindable in Options > Controls).
-- **Create, edit, delete and browse** notes. Each note has a unique ID, a title and a multi-line body with word wrap, cursor movement and text selection.
+- **Create, edit, delete and browse** notes. Each note has a unique ID, a title and a multi-line body with word wrap, cursor movement, text selection and Ctrl+C / Ctrl+V / Ctrl+X.
 - **Three categories**, picked with tabs:
   - **WORLD**: notes tied to one singleplayer world (by save folder).
   - **SERVER**: notes tied to one multiplayer server (by address).
@@ -39,7 +39,7 @@ Notes are stored in `horizon-mod-data/notes/` as plain text (`global.txt`, `worl
 ## Limitations
 
 - No creation or modification dates: the mod API exposes no wall-clock time.
-- No copy/paste or mouse-wheel scrolling in the note body.
+- No mouse-wheel scrolling in the note body (use the arrow keys).
 - The screen can't open over another screen or from the main menu, and can't be used with a controller.
 - Servers are identified by address, not by display name.
 - UI text is English only.
