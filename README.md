@@ -14,6 +14,7 @@ Client-side only, written in Rust (WebAssembly). Nothing to install on servers.
   - **GLOBAL**: notes available everywhere.
 - **Automatic context**: the mod detects the world or server you are in and shows the matching notes.
 - **HUD pinning**: pin a note to show it in the top-left corner (up to 3 at once). It updates live when you edit the note and disappears when you unpin it.
+- **Scrolling**: mouse wheel in the note body and in the list, with scrollbars, and a character counter.
 - **Safe local saving**: notes are written atomically on every change, persist across restarts, world changes and disconnects, and are never overwritten if a file can't be read (unreadable lines are copied to a `.bak` file).
 
 ## Installation
@@ -30,6 +31,7 @@ Client-side only, written in Rust (WebAssembly). Nothing to install on servers.
 | New note | **New** button |
 | Select a note | Click it in the list |
 | Switch title / body | Click, or **Tab** |
+| Scroll a long note or the list | **Mouse wheel** over it, or **PageUp / PageDown** in the note |
 | Pin / unpin | **Pin** / **Unpin** button |
 | Delete | **Delete**, then **Confirm?** |
 | Switch category | **WORLD**, **SERVER** or **GLOBAL** tab (only the ones that apply to where you are are enabled) |
@@ -39,7 +41,6 @@ Notes are stored in `horizon-mod-data/notes/` as plain text (`global.txt`, `worl
 ## Limitations
 
 - No creation or modification dates: the mod API exposes no wall-clock time.
-- No mouse-wheel scrolling in the note body (use the arrow keys).
 - The screen can't open over another screen or from the main menu, and can't be used with a controller.
 - Servers are identified by address, not by display name.
 - UI text is English only.
